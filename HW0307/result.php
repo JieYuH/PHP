@@ -35,6 +35,7 @@ echo "想說的話 : ". nl2br($uComment)."<br>";
 ?>
 <br>
 ✉️若有任何問題請聯絡👇
+<br>
 mail:a1123357@mail.nuk.edu.tw
 <br>
 <br>
