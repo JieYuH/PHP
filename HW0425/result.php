@@ -55,20 +55,20 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'Joannahuang9271@gmail.com';                     //SMTP username
-    $mail->Password   = 'arwt igdw vlui jldz';                               //SMTP password
+    $mail->Username   = 'xxxxxxxxxxxxxxx@gmail.com';                     //SMTP username
+    $mail->Password   = 'xxxx xxxx xxxx xxxx';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     $mail->Charset    = "UTF-8";
     
     
-    $mail->setFrom('Joannahuang9271@gmail.com', 'Mailer');
+    $mail->setFrom('xxxx@gmail.com', 'Mailer');
     
     if(!empty($_POST["email"])) 
     {
         $mail->addAddress($email);
     }
-    $mail->addAddress('Joannahuang9271@gmail.com');               
+    $mail->addAddress('xxxx@gmail.com');               
     
     $mail->isHTML(true);                                  
     if(empty($_POST["name"]) || empty($_POST["email"]) || empty($_FILES["file"]["name"])) 
